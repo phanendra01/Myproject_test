@@ -1,0 +1,17 @@
+Sonarqube installation on SQL server (Ubantu) - https://www.vultr.com/docs/install-sonarqube-on-ubuntu-20-04-lts/
+
+SonarScanner installation on Ubantu           - https://techexpert.tips/sonarqube/sonarqube-scanner-installation-ubuntu-linux/
+
+
+postgresql commands
+
+\l -> command will show all the existing databases
+\du -> This command will show all the existing users running in the psql
+ALTER USER postgres WITH PASSWORD 'Yourpassword'; -> command to change the default user password
+CREATE USER <username> with PASSWORD 'password'; -> This command will create an new user in the database
+DROP USER <username> -> This command will delete the selected user
+ALTER USER <username> WITH SUPERUSER; -> This command will change the user role as nomal user to super user
+CREATE DATABASE <database name> OWNER <username>; -> This command will create a new database and sets the owner to the user selected
+GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar; -> This command will grant all the previlliges on database to the user
+\q -> command to exit from postgresql
+exit -> to exit form non root sudo user account
